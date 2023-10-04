@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/webpp-frontend/static/css/main.ef739778.css",
-    "main.js": "/webpp-frontend/static/js/main.e162da6a.js",
-    "static/js/787.8b479733.chunk.js": "/webpp-frontend/static/js/787.8b479733.chunk.js",
-    "static/media/aboutImage.jpeg": "/webpp-frontend/static/media/aboutImage.d0a431801c9d7f1fffe1.jpeg",
-    "static/media/headshot1.jpg": "/webpp-frontend/static/media/headshot1.8e47360fb8a28e41c441.jpg",
-    "static/media/productImage.png": "/webpp-frontend/static/media/productImage.5fd9479c541d360f771b.png",
-    "static/media/Graphic-_1-removebg.png": "/webpp-frontend/static/media/Graphic-_1-removebg.fc07e999b798b6d7d848.png",
-    "static/media/Inter-Regular.ttf": "/webpp-frontend/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
-    "index.html": "/webpp-frontend/index.html",
-    "main.ef739778.css.map": "/webpp-frontend/static/css/main.ef739778.css.map",
-    "main.e162da6a.js.map": "/webpp-frontend/static/js/main.e162da6a.js.map",
-    "787.8b479733.chunk.js.map": "/webpp-frontend/static/js/787.8b479733.chunk.js.map"
+    "main.css": "/webapp-frontend/static/css/main.bc7d35cb.css",
+    "main.js": "/webapp-frontend/static/js/main.c5535b40.js",
+    "static/js/787.8b479733.chunk.js": "/webapp-frontend/static/js/787.8b479733.chunk.js",
+    "static/media/aboutImage.jpeg": "/webapp-frontend/static/media/aboutImage.d0a431801c9d7f1fffe1.jpeg",
+    "static/media/headshot1.jpg": "/webapp-frontend/static/media/headshot1.8e47360fb8a28e41c441.jpg",
+    "static/media/productImage.png": "/webapp-frontend/static/media/productImage.5fd9479c541d360f771b.png",
+    "static/media/Graphic-_1-removebg.png": "/webapp-frontend/static/media/Graphic-_1-removebg.fc07e999b798b6d7d848.png",
+    "static/media/Inter-Regular.ttf": "/webapp-frontend/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "index.html": "/webapp-frontend/index.html",
+    "main.bc7d35cb.css.map": "/webapp-frontend/static/css/main.bc7d35cb.css.map",
+    "main.c5535b40.js.map": "/webapp-frontend/static/js/main.c5535b40.js.map",
+    "787.8b479733.chunk.js.map": "/webapp-frontend/static/js/787.8b479733.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef739778.css",
-    "static/js/main.e162da6a.js"
+    "static/css/main.bc7d35cb.css",
+    "static/js/main.c5535b40.js"
   ]
 }
