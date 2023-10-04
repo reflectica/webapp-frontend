@@ -1,0 +1,26 @@
+/* styles.css */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip-text {
+    display: none;
+    position: absolute;
+    background-color: royalblue;
+    color: #fff;
+    font-family: Inter-Regular;
+    padding: 5px;
+    font-size: 0.8em;
+    border-radius: 3px;
+    margin-left: 10.8em;
+    top: 100%;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+  
+  .tooltip-container:hover .tooltip-text {
+    display: block;
+  }
+  

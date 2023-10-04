@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+.totalSessionsCard {
+    height: 10.4375em;
+    width: 9.625em;
+    border-radius: 15px;
+    background: #FFF;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cardHeader {
+    color: #000;
+    text-align: center;
+    font-family: Mukta;
+    font-size: 1.1743125em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.028px;
+    text-align: center;
+}
+
+.messageDiv {
+    color: #000;
+    text-align: center;
+    font-family: Mukta;
+    font-size: 1.1743125em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.028px;
+}

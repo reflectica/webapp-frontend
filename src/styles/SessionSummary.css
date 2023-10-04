@@ -1,0 +1,226 @@
+
+
+.contentContainer{
+  width: 71.125em;
+  height: 38.375em;
+  border-radius: 15px;
+  background: #FFF;
+  margin-top: 1.0625em;
+  margin-left: 1.0625em;
+
+}
+
+.goodJobTextContainer{
+  color: var(--black-2, #1D1D1D);
+  font-family: Mukta;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.06px;
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+.sessionFeelingScoreContainer {
+  width: 9.625em;
+  height: 11em;
+  border-radius: 4.27px;
+  border: 3px solid #5271FF;
+  background: #FBFBFB;
+  display: flex;
+  flex-direction: column;
+}
+
+.sessionFeelingTextContainer {
+  color: #000;
+  text-align: center;
+  font-family: Mukta;
+  font-size: 18.789px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.028px;
+  padding-top: 0.5em;
+}
+
+.sessionFeelingScore {
+  color: #000;
+  text-align: center;
+  font-family: Mukta;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.125px;
+  padding-top:0.2em;
+}
+
+.sessionEmojiContainer{
+  width: 9.625em;
+  height: 11em;
+  border-radius: 4.27px;
+  border: 3px solid #5271FF;
+  background: #FBFBFB;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.sessionEmojiText{
+  color: #000;
+  text-align: center;
+  font-family: Mukta;
+  font-size: 18.789px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.028px;
+  padding-top: 0.5em;
+}
+
+.sessionEmoji{
+  color: #000;
+  text-align: center;
+  font-family: Mukta;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.125px;
+  padding-top:0.2em;
+}
+
+.sessionInformationContainer{
+  padding-top: 4em ;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.sessionBulletPointsContainer{
+  width: 21em;
+  height: 24.075em;
+  border-radius: 4.27px;
+  border: 3px solid #5271FF;
+  background: #FBFBFB;
+  overflow: scroll;
+}
+.sessionScoreAndFeelingContainer{
+  margin-left: 2em;
+}
+.userTextTranscript{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+  background: #5271FF;
+  color: white;
+  font-family: "Inter-Regular";
+  font-size: 1em;
+  padding: 0.5em;
+  width: fit-content;
+  max-width: 20.6875em;
+  height: fit-content;
+  margin-bottom:1em
+}
+.userTranscriptContainer{
+  display: flex;
+  justify-content: right;
+}
+.sessionTranscriptContainer{
+  overflow: scroll;
+}
+.assistantTextTranscript{
+  text-align: left;
+  border-radius: 25px;
+  background: #E7E7E7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;  
+  font-family: Inter-Regular;
+  font-size: 1em;
+  padding: 0.5em;
+  width: fit-content;
+  max-width: 20.6875em;
+  height: fit-content;
+  margin-bottom:0.3em
+}
+
+.transcriptContainer{
+  margin-top: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
+  overflow:scroll;
+  font-family: Inter-SemiBold;
+}
+
+.sessionTranscriptHeader{
+  color: #000;
+  text-align: center;
+  font-family: Mukta;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.016px;
+  padding-top: 1em;
+}
+
+.bulletPoints{
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+.sessionBulletPointsContent{
+  padding-left: 2em;
+  margin-top: 1em;
+  color: #000;
+  font-family: Mukta;
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.056px;
+  width: 18.75em;
+  height: fit-content;
+}
+.buttonContainer{
+  margin-left: 3.5em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66em;
+  height: 3em;
+  padding:1em;
+  text-align: center;
+  border-radius: 8px;
+  background: var(--brand-primary, #5271FF);
+}
+.buttonText {
+  color: var(--white, #FFF);
+  font-family: Inter-Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+}
+.sessionBulletPointsHeader{
+  padding-top: 1em;
+  text-align: center;
+  color: #000;
+  font-family: Mukta;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.016px;
+}
+
+.sessionTranscriptContainer{
+  width: 31.375em;
+  height: 24.075em;
+  border-radius: 4.27px;
+  border: 3px solid #5271FF;
+  background: #FBFBFB;
+}

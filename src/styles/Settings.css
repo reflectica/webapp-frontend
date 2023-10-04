@@ -1,0 +1,23 @@
+/* Settings.css */
+.settings-container {
+    height: 90vh;
+    overflow-y: auto;
+    column-gap: 1px;
+    padding: 12px;
+  }
+  
+  @media (min-width: 800px) {
+    .settings-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) { 
+    .settings-container {
+        width: 100%;
+        transform: scale(0.8);
+        transform-origin: top left;
+      }
+  }
+  

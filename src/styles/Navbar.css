@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../fonts/Inter-Regular.ttf') format('truetype');
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: #F5F7FA;
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  .navbar .leftSide {
+    flex: 50px;
+    height: 80px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-left: 32px;
+  }
+  
+  .navbar .leftSide img {
+    width: 170px;
+  }
+
+  .navbar .rightSide {
+    flex: 50px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    padding-top: 30px;
+    padding-right: 20%;
+    align-items: stretch;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    font-family: 'Inter-Regular';
+    color: rgb(0, 0, 0);
+    font-size: 13.5px; 
+    font-weight: 200;
+    text-decoration: none;
+    padding-top:30px;
+    padding-right: 72px;
+    white-space: nowrap;
+  }
+
+  
+
+  .navbar .btn {
+    background-color: #5271FF;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #494444;
+    cursor: pointer;
+    font-family: 'Inter-Regular';
+    font-size: 13.5px; 
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 5px;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    background-color: #1b527c;
+  }
+  
+  
+    
+  
+
+ 
