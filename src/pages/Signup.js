@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import firebaseApp from './firebase.js';
-import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, createUserWithEmailAndPassword, sendEmailVerification  } from "firebase/auth";
+import { getAuth, GoogleAuthProvider, signInWithRedirect, getRedirectResult, createUserWithEmailAndPassword, sendEmailVerification  } from "firebase/auth";
 import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
 import styled from 'styled-components';
 import { useContext } from "react";
@@ -89,7 +89,7 @@ export default function Signup() {
     const [error, setError] = useState();
     const [termsCheckValue, setTermsCheckValue] = useState(false)
     const [dialogToggle, setDialogToggle] = useState(false);
-    const [scroll, setScroll] = useState("paper")
+    const [scroll] = useState("paper")
     const auth = getAuth(firebaseApp);
     const provider = new GoogleAuthProvider();
     const db = getFirestore(firebaseApp);

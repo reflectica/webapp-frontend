@@ -1,8 +1,8 @@
 import React, { useContext, useState, useEffect } from "react";
-import { Route, Navigate, useLocation } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { AuthContext } from "./Auth";
 import { getAuth } from "firebase/auth";
-import { getFirestore, collection, query, where, getDocs, addDoc, doc, onSnapshot } from 'firebase/firestore';
+import { getFirestore, collection, query, getDocs, doc } from 'firebase/firestore';
 import firebaseApp from './firebase.js';
 
 export function PrivateRoute({ children }) {

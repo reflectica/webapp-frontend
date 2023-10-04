@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import { Card, Space } from 'antd';
 import "../styles/AllSessions.css"
 
-const backendUrl = process.env.REACT_APP_BACKEND_URL
 
 const CardContainer = styled.div`
   display: grid;

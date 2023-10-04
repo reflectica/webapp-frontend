@@ -1,8 +1,8 @@
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState } from 'react';
 import firebaseApp from './firebase.js';
-import { collection, query, where, getDocs, addDoc, onSnapshot } from 'firebase/firestore';
-import { getAuth, GoogleAuthProvider, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithRedirect, getRedirectResult } from "firebase/auth";
+import { collection, getDocs } from 'firebase/firestore';
+import { getAuth, GoogleAuthProvider, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithRedirect } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import styled from 'styled-components';
 import { useContext } from "react";
@@ -83,7 +83,7 @@ export default function Login() {
     const [errorMessage, setErrorMessage] = useState();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('')
+    const [error] = useState('')
     const auth = getAuth(firebaseApp);
     const provider = new GoogleAuthProvider();
     const db = getFirestore(firebaseApp);

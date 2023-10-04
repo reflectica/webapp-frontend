@@ -42,12 +42,6 @@ const MoreDetailsButton = styled.button`
 `;
 
 
-const Image = styled.img`
-  max-width: 12vw;  // adjust as needed 
-  height: auto;
-  width: auto;
-`;
-
 const NumberText = styled.p`
   font-size: 36px;
   margin: 0;

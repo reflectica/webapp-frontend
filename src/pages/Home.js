@@ -4,13 +4,13 @@ import styled, { createGlobalStyle } from 'styled-components';
 import homeImage from "../images/Graphic-_1-removebg.png";
 import aboutImage from "../images/aboutImage.jpeg";
 import productImage from "../images/productImage.png";
-import headshot1 from "../images/headshot1.jpg";
+//import headshot1 from "../images/headshot1.jpg";
 import Icon1 from "../images/Icon1.png";
 import Icon2 from "../images/Icon2.png";
 import Icon3 from "../images/Icon3.png";
 import Icon4 from "../images/Icon4.png";
-import Icon5 from "../images/Icon5.png";
-import Icon6 from "../images/Icon6.png";
+//import Icon5 from "../images/Icon5.png";
+//import Icon6 from "../images/Icon6.png";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -239,7 +239,7 @@ const ProductSubText = styled.p`
 
 // Styling for the pricing section 
 
-const PricingTitle = styled.h2`
+/* const PricingTitle = styled.h2`
   font-weight: bold;
   font-size: 2.5vw;
   color: black;
@@ -369,8 +369,8 @@ const TestimonialHeadshot = styled.img`
   position: absolute;
   top: -20px;
   left: -20px;
-  width: 60px; /* Adjust the size as needed */
-  height: 60px; /* Adjust the size as needed */
+  width: 60px;
+  height: 60px; 
   border: 2px solid white;
 `;
 
@@ -393,7 +393,7 @@ const TestimonialImage = styled.img`
   max-width: 100%;
   align-self: flex-end;
 `;
-
+*/
 // Main global styling for the whole page
 
 const divStyle = {

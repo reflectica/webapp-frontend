@@ -16,7 +16,7 @@ export default function Support() {
   const [ email, setEmail] = useState("")
   const [ message, setMessage ] = useState("")
 
-  const backendUrl = process.env.REACT_APP_BACKEND_URL
+
 
   const handleFormSubmit = async (e) => {
     e.preventDefault()

@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import "../../styles/OverallMentalHealth.css"
 import Tooltip from '../Tooltip';
-import tooltipIcon from "../../images/tooltipImage.png"
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -23,12 +22,6 @@ const CardHeader = styled.div`
   
 `;
 
-const Image = styled.img`
-  max-width: 200px;  // adjust as needed
-  max-height: 200px;  // adjust as needed
-  height: auto;
-  width: auto;
-`;
 
 const HeaderText = styled.h2`
   margin-top: 0.9em;

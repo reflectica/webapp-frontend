@@ -1,11 +1,9 @@
-import React, { useState, useEffect, createContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import { getAuth } from "firebase/auth";
 import { getFirestore, collection, query, where, getDocs, addDoc, doc, onSnapshot } from 'firebase/firestore';
 import firebaseApp from './firebase.js';
 import { loadStripe } from '@stripe/stripe-js';
-import { AuthContext } from "./Auth.js";
-import { useContext } from "react";
-import PricingTable from '../components/PricingTable.js';
+
 
 
 const Payment = () => {

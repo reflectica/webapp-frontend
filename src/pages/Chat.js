@@ -58,9 +58,6 @@ export default function Chat() {
     }
   };
 
-  const handleStopListening = () => {
-    SpeechRecognition.stopListening()
-  }
   const handleEndSession = async (userId) => {
     console.log("button executed", userId)
     await axios.post(`${backendUrl}/endSession`, { userId: userId, sessionId: sessionId })

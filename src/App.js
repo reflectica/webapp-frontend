@@ -9,7 +9,6 @@ import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
 import Navbar from './components/Navbar';
-import MainFooter from './components/MainFooter';
 import { AuthProvider } from './pages/Auth';
 import Footer from './components/Footer';
 import { PrivateRoute } from './pages/PrivateRoute';

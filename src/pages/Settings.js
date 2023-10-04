@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Settings.css';
-import CardComponent from '../components/Dashboard/CardComponent';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CardComponent from '../components/Dashboard/CardComponent';     
 import {
   faIdCard, faShieldHalved, faMoneyBills, faTriangleExclamation
 } from '@fortawesome/free-solid-svg-icons';

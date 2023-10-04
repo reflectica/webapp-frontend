@@ -27,23 +27,6 @@ const MessageDiv = styled.div`
   flex-shrink: 0;
 `;
 
-const HeaderText = styled.h2`
-  color: #000;
-    text-align: center;
-    font-family: Mukta;
-    font-size: 1.1743125em;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.028px;
-    text-align: center;
-`;
-
-const Image = styled.img`
-  max-width: 12vw;  // adjust as needed 
-  height: auto;
-  width: auto;
-`;
 const NumberText = styled.p`
 `;
 

@@ -3,7 +3,6 @@ import Logo from '../images/Logo Dark3.png'
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 
-const backendUrl = process.env.REACT_APP_BACKEND_URL
 
 const navigation = {
 

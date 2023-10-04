@@ -2,13 +2,13 @@ import React, { useState, useContext } from "react";
 import { getAuth, deleteUser, reauthenticateWithCredential, EmailAuthProvider, updatePassword } from "firebase/auth";
 import { AuthContext } from '../pages/Auth';
 import axios from "axios";
-import { useNavigate } from 'react-router-dom';
 
-const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
+
 
 export default function FormComponent({ id }) {
   const { currentUser } = useContext(AuthContext);
-  const navigate = useNavigate();
+
   const [ name, setName ] = useState('')
   const [passwordError, setPasswordError] = useState();
   const [ email, setEmail ] = useState('')

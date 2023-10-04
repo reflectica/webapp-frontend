@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, Space } from 'antd';
 import { styled } from 'styled-components';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 
 const CardContainer = styled.div`
   display: grid;

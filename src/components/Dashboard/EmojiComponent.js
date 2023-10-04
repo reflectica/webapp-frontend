@@ -61,12 +61,7 @@ const NumberText = styled.p`
   text-align: center
 `;
 
-const Image = styled.img`
-  max-width: 200px;  // adjust as needed
-  max-height: 200px;  // adjust as needed
-  height: auto;
-  width: auto;
-`;
+
 
 const EmojiComponent = ({ data }) => {
   const NumberTextSize = data ?
