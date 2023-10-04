@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import styled, { createGlobalStyle } from 'styled-components';
+import '../styles/Home.css';
 import homeImage from "../images/Graphic-_1-removebg.png";
 import aboutImage from "../images/aboutImage.jpeg";
 import productImage from "../images/productImage.png";
@@ -12,230 +12,7 @@ import Icon4 from "../images/Icon4.png";
 //import Icon5 from "../images/Icon5.png";
 //import Icon6 from "../images/Icon6.png";
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    font-family: 'Inter', sans-serif;
-  }
-`;
 
-// Styling for the main header section
-
-const OuterContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 85%;
-  width: 100%;
-`;
-
-const MainContainer = styled.div`
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
-  padding-left: 7%;
-`;
-
-const SideContainer = styled.div`
-  width: 30%;
-  padding-right: 40%;
-`;
-
-const Image = styled.img`
-  max-width: 27vw;
-  max-height: 27vw; 
-`;
-
-const MainText = styled.h1`
-  font-weight: bold;
-  font-size: 4.5vw;
-  text-align: left;
-  line-height: 1.1;
-  color: #494444;
-  span {
-    color: #5271FF;
-  }
-`;
-
-const SubText = styled.p`
-  font-size: 1.1vw;
-  text-align: left;
-  color: black;
-  font-weight: semi-bold;
-`;
-
-const ButtonWrapper = styled.div`
-  button {
-    padding: 15px 40px;
-    font-weight: 600;
-    background-color: #5271FF;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    &:hover {
-      color: #5271FF;
-      background-color: white;
-    }
-  }
-`;
-
-// Styling for the about section
-
-const AboutContainer = styled.div`
-  display: flex;
-  width: 100vw;
-  margin-top: 50px; 
-  justify-content: center; 
-  align-items: center;
-  background-color: white;
-  height: fit-content;
-`;
-
-const ImageContainer = styled.div`
-  flex: 35%;  
-`;
-
-const AboutImage = styled.img`
-  max-width: 24vw;
-  max-height: 24vw;   
-  border-radius: 10px;
-  margin-left: 220px;
-`;
-
-const TextContainer = styled.div`
-  flex: 65%;  
-  padding: 5.5em;
-  display: flex;
-  flex-direction: column;
-`;
-
-const AboutTitle = styled.h2`
-  font-weight: bold;
-  font-size: 2.5vw;
-  margin-bottom: 15px;
-  color: #5271FF;
-`;
-
-const AboutSubText = styled.p`
-font-size: 1vw;
-text-align: left;
-color: black;
-font-weight: semi-bold;
-`;
-
-// Styling for the state of mental health stats section
-
-const StatsContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 35px;
-  padding: 2em 10em;
-  height: fit-content;
-`;
-
-const StatsTextContainer = styled.div`
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 0px;
-`;
-
-const StatsTitle = styled.h2`
-  font-weight: bold;
-  font-size: 2.5vw;
-  color: #494444;
-  span {
-    color: #5271FF;
-  }
-`;
-
-const StatsSubtitle = styled.p`
-  font-size: 1.2vw;
-  color: #18191F;
-`;
-
-const StatsGrid = styled.div`
-  width: 50%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
-`;
-
-const StatBox = styled.div`
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 1em;
-`;
-
-const IconImage = styled.img`
-  align-self: flex-start;
-  max-width: 2.5vw;
-  max-height: 2.5vw;
-`;
-
-const StatMainText = styled.h3`
-  font-weight: bold;
-  margin-left: 10px;
-  font-size: 1.8vw;
-`;
-
-const StatSubText = styled.p`
-  margin-left: 10px;
-  font-size: 1vw;
-  color: grey;
-`;
-
-// Styling for the product section
-
-const ProductContainer = styled.div`
-  display: flex;
-  width: 100vw;
-  margin-top: 50px; 
-  justify-content: center; 
-  align-items: center;
-  background-color: white;
-  height: fit-content;
-`;
-
-const ProductImageContainer = styled.div`
-  flex: 35%;  
-  margin-right: 220px;
-  margin-top: 20px;
-`;
-
-const ProductImage = styled.img`
-  max-width: 27vw;
-  max-height: 27vw;   
-  border-radius: 0px;
-  border: 3px solid #5271FF;
-`;
-
-const ProductTextContainer = styled.div`
-  flex: 65%;  
-  padding: 5.5em;
-  display: flex;
-  flex-direction: column;
-  margin-left: 120px;
-`;
-
-const ProductTitle = styled.h2`
-  font-weight: bold;
-  font-size: 2.5vw;
-  margin-bottom: 15px;
-  color: #5271FF;
-`;
-
-const ProductSubText = styled.p`
-  font-size: 1.2vw;
-  text-align: left;
-  color: black;
-  font-weight: bold;
-`;
 
 // Styling for the pricing section 
 
@@ -405,125 +182,124 @@ const divStyle = {
 
 const Home = () => (
   <div className="flex h-screen w-screen flex-1 flex-col justify-center" style={divStyle} id="home">
-    <GlobalStyle />
 
     {/*This is the main page that the user first sees*/}
 
-    <OuterContainer>
-      <MainContainer>
-        <MainText>
+    <div className='outer-container' >
+      <div className='main-container'>
+        <div className='main-text'>
           15-min audio therapy <br /> sessions with <span>AI</span>
-        </MainText>
-        <SubText>
+        </div>
+        <div className='sub-text'>
           Conduct hyper-realistic life-like audio therapy sessions with an AI therapist.<br />Disclaimer: this is a self-reflection tool, not a substitute for professional help.
-        </SubText>
+        </div>
         <Link to="/signup">
-          <ButtonWrapper>
+          <div className='button-wrapper'>
             <button type="button" className="rounded-md shadow-sm">Get Started</button>
-          </ButtonWrapper>
+          </div>
         </Link>
-      </MainContainer>
-      <SideContainer>
-        <Image src={homeImage} alt="Home Graphic" />
-      </SideContainer>
-    </OuterContainer>
+      </div>
+      <div className='side-container'>
+        <img className= 'image' src={homeImage} alt="Home Graphic" />
+      </div>
+    </div>
 
     {/*This is the about section*/}
 
-    <AboutContainer id="aboutUs">
-      <ImageContainer>
-        <AboutImage src={aboutImage} alt="About Us" />
-      </ImageContainer>
-      <TextContainer>
-        <AboutTitle>About Us</AboutTitle>
-        <AboutSubText>
-        Our mission is grounded in the belief that mental health is as fundamental to a <br/>
-        person's well-being as their physical health. We know the current mental health <br/>
-        landscape in America is fraught with challenges—millions of people grappling with <br/>
-        issues such as depression, anxiety, and stress, yet unable to access the necessary <br/>
-        help due to barriers like cost, stigma, or lack of professionals. We aim to change <br/>
-        that reality by leveraging the power of AI as a first step in addressing mental health. <br/>
-        <br/>
-        Reflectica—because everyone deserves a safe space to reflect, express, and heal.
-        </AboutSubText>
-      </TextContainer>
-    </AboutContainer>
+    <div className='about-container' id="aboutUs">
+      <div className='image-container'>
+        <img className='about-image' src={aboutImage} alt="About Us" />
+      </div>
+      <div className='text-container'>
+        <div className='about-title'>About Us</div>
+        <div className='about-sub-text'>
+          Our mission is grounded in the belief that mental health is as fundamental to a <br />
+          person's well-being as their physical health. We know the current mental health <br />
+          landscape in America is fraught with challenges—millions of people grappling with <br />
+          issues such as depression, anxiety, and stress, yet unable to access the necessary <br />
+          help due to barriers like cost, stigma, or lack of professionals. We aim to change <br />
+          that reality by leveraging the power of AI as a first step in addressing mental health. <br />
+          <br />
+          Reflectica—because everyone deserves a safe space to reflect, express, and heal.
+        </div>
+      </div>
+    </div>
 
     {/*This is the state of mental health stats section*/}
 
-    <StatsContainer>
-      <StatsTextContainer>
-        <StatsTitle>
-          The state of mental health <br/> <span>by the numbers</span>
-        </StatsTitle>
-        <StatsSubtitle>
+    <div className='stats-container'>
+      <div className='stats-text-container'>
+        <div className='stats-title'>
+          The state of mental health <br /> <span>by the numbers</span>
+        </div>
+        <div className='stats-subtitle'>
           This is why we do what we do.
-        </StatsSubtitle>
-      </StatsTextContainer>
-      <StatsGrid>
-        <StatBox>
-          <div style={{display: 'flex', alignItems: 'center'}}> 
-            <IconImage src={Icon1} alt="Icon1" />
-          <div>
-            <StatMainText>80 million+</StatMainText>
-            <StatSubText>Americans struggle with their mental health</StatSubText>
+        </div>
+      </div>
+      <div className='stats-grid'>
+        <div className='stat-box'>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <img className='icon-image' src={Icon1} alt="Icon1" />
+            <div>
+              <div className='stat-main-text'>80 million+</div>
+              <div className='stat-sub-text'>Americans struggle with their mental health</div>
+            </div>
           </div>
+        </div>
+        <div className='stat-box'>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <img className='icon-image' src={Icon2} alt="Icon2" />
+            <div>
+              <div className='stat-main-text'>90% of users</div>
+              <div className='stat-sub-text'>Find AI tools effective in improving their mental health</div>
+            </div>
           </div>
-        </StatBox>
-        <StatBox>
-          <div style={{display: 'flex', alignItems: 'center'}}> 
-            <IconImage src={Icon2} alt="Icon2" />
-          <div>
-            <StatMainText>90% of users</StatMainText>
-            <StatSubText>Find AI tools effective in improving their mental health</StatSubText>
+        </div>
+        <div className='stat-box'>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <img className='icon-image' src={Icon3} alt="Icon3" />
+            <div>
+              <div className='stat-main-text'>Over 56%</div>
+              <div className='stat-sub-text'>Of struggling Americans have no access to care</div>
+            </div>
           </div>
+        </div>
+        <div className='stat-box'>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <img className='icon-image' src={Icon4} alt="Icon4" />
+            <div>
+              <div className='stat-main-text'>$125 per session</div>
+              <div className='stat-sub-text'>Average cost of therapy, not affordable for most</div>
+            </div>
           </div>
-        </StatBox>
-        <StatBox>
-          <div style={{display: 'flex', alignItems: 'center'}}> 
-            <IconImage src={Icon3} alt="Icon3" />
-          <div>
-            <StatMainText>Over 56%</StatMainText>
-            <StatSubText>Of struggling Americans have no access to care</StatSubText>
-          </div>
-          </div>
-        </StatBox>
-        <StatBox>
-          <div style={{display: 'flex', alignItems: 'center'}}> 
-            <IconImage src={Icon4} alt="Icon4" />
-          <div>
-            <StatMainText>$125 per session</StatMainText>
-            <StatSubText>Average cost of therapy, not affordable for most</StatSubText>
-          </div>
-          </div>
-        </StatBox>
-      </StatsGrid>
-    </StatsContainer>
+        </div>
+      </div>
+    </div>
 
     {/*This is the product description section*/}
 
-    <ProductContainer id="product">
-      <ProductTextContainer>
-        <ProductTitle>The Product</ProductTitle>
-        <ProductSubText>
-        Ever felt like you just needed to vent but had no one <br/>
-        around to talk to. We created Reflectica for that, a virtual <br/> 
-        AI therapist that talks to you and mimics life-like therapy <br/>
-        sessions. It can help you self-reflect and give you tips <br/>
-        on how to feel better. It learns from you and gets better <br/>
-        at understanding you overtime just like a human. <br/>
-        <br/>
-        Building Reflection 1, our custom fine-tuned LLM and <br/>
-        the most advanced AI model for therapy on the planet.
-        </ProductSubText>
-      </ProductTextContainer>
-      <ProductImageContainer>
-        <ProductImage src={productImage} alt="Product Image" />
-      </ProductImageContainer>
-    </ProductContainer>
+    <div className='product-container' id="product">
+      <div className='product-text-container'>
+        <div className='product-title '>The Product</div>
+        <div className='product-sub-text'>
+          Ever felt like you just needed to vent but had no one <br />
+          around to talk to. We created Reflectica for that, a virtual <br />
+          AI therapist that talks to you and mimics life-like therapy <br />
+          sessions. It can help you self-reflect and give you tips <br />
+          on how to feel better. It learns from you and gets better <br />
+          at understanding you overtime just like a human. <br />
+          <br />
+          Building Reflection 1, our custom fine-tuned LLM and <br />
+          the most advanced AI model for therapy on the planet.
+        </div>
+      </div>
+      <div className='product-image-container '>
+        <img className='product-image' src={productImage} alt="Product Image" />
+      </div>
+    </div>
 
     {/*This is the pricing section*/}
-{/*
+    {/*
     <PricingTitle id="pricing">Simple All-Access Pricing</PricingTitle>
     <PricingSectionCards>
       <PricingCard>

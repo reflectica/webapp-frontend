@@ -1,0 +1,221 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Styling for the main header section */
+  .outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: 100%;
+  }
+  
+  .main-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 7%;
+  }
+  
+  .side-container {
+    width: 30%;
+    padding-right: 40%;
+  }
+  
+  .image {
+    max-width: 27vw;
+    max-height: 27vw;
+  }
+  
+  .main-text {
+    font-weight: bold;
+    font-size: 4.5vw;
+    text-align: left;
+    line-height: 1.1;
+    color: #494444;
+  }
+  
+  .main-text span {
+    color: #5271FF;
+  }
+  
+  .sub-text {
+    font-size: 1.1vw;
+    text-align: left;
+    color: black;
+    font-weight: semi-bold;
+  }
+  
+  .button-wrapper button {
+    padding: 15px 40px;
+    font-weight: 600;
+    background-color: #5271FF;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-wrapper button:hover {
+    color: #5271FF;
+    background-color: white;
+  }
+  
+  /* Styling for the about section */
+  .about-container {
+    display: flex;
+    width: 100vw;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: fit-content;
+  }
+  
+  .image-container {
+    flex: 35%;
+  }
+  
+  .about-image {
+    max-width: 24vw;
+    max-height: 24vw;
+    border-radius: 10px;
+    margin-left: 220px;
+  }
+  
+  .text-container {
+    flex: 65%;
+    padding: 5.5em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-title {
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-bottom: 15px;
+    color: #5271FF;
+  }
+  
+  .about-sub-text {
+    font-size: 1vw;
+    text-align: left;
+    color: black;
+    font-weight: semi-bold;
+  }
+  
+  /* Styling for the state of mental health stats section */
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 35px;
+    padding: 2em 10em;
+    height: fit-content;
+  }
+  
+  .stats-text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  
+  .stats-title {
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: #494444;
+  }
+  
+  .stats-title span {
+    color: #5271FF;
+  }
+  
+  .stats-subtitle {
+    font-size: 1.2vw;
+    color: #18191F;
+  }
+  
+  .stats-grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+  
+  .stat-box {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .icon-image {
+    align-self: flex-start;
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+  }
+  
+  .stat-main-text {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 1.8vw;
+  }
+  
+  .stat-sub-text {
+    margin-left: 10px;
+    font-size: 1vw;
+    color: grey;
+  }
+  
+  /* Styling for the product section */
+  .product-container {
+    display: flex;
+    width: 100vw;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: fit-content;
+  }
+  
+  .product-image-container {
+    flex: 35%;
+    margin-right: 220px;
+    margin-top: 20px;
+  }
+  
+  .product-image {
+    max-width: 27vw;
+    max-height: 27vw;
+    border-radius: 0px;
+    border: 3px solid #5271FF;
+  }
+  
+  .product-text-container {
+    flex: 65%;
+    padding: 5.5em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+  }
+  
+  .product-title {
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-bottom: 15px;
+    color: #5271FF;
+  }
+  
+  .product-sub-text {
+    font-size: 1.2vw;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+  }
+  

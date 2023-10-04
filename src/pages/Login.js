@@ -122,6 +122,7 @@ export default function Login() {
 
             const subscriptionSnap = await getDocs(subscriptionCollection);
 
+            
             let status = '';
             subscriptionSnap.forEach(subscription => {
                 console.log("subscription", subscription.data());
