@@ -1,0 +1,47 @@
+.labelStyle  {
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+
+.inputStyle  {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin: 4px 0;
+    width: 200px;
+
+}
+
+
+.buttonStyle {
+    margin-left: 8px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    background-color: #5271FF;
+    color: white;
+    border-radius: 5px;
+}
+
+.portalButton  {
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    background-color: #5271FF;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.deleteButton  {
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    background-color: #f71818;
+    color: white;
+    border-radius: 5px;
+}

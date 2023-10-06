@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from "styled-components"
 import "../../styles/EmojiComponent.css"
 import Tooltip from '../Tooltip'
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
@@ -18,50 +17,6 @@ const emojiObject = {
   10: "😇",
 }
 
-const Card = styled.div`
-    height: 10.4375em;
-    width: 9.625em;
-    border-radius: 15px;
-    background: #FFF;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-`;
-
-const CardHeader = styled.div`
-  display: flex;
-  width: 8.4375em;
-  height: 2.063875em;
-  margin-top:1.6em;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-`;
-
-const MessageDiv = styled.div`
-  display: flex;
-  width: 8.4375em;
-  height: 5.592375em;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  flex-shrink: 0;
-`;
-
-const HeaderText = styled.h2`
-  
-`;
-
-const NumberText = styled.p`
-  
-  margin: 0;
-  font-weight: bold;
-  text-align: center
-`;
-
-
 
 const EmojiComponent = ({ data }) => {
   const NumberTextSize = data ?
@@ -70,20 +25,20 @@ const EmojiComponent = ({ data }) => {
   console.log()
   return (
     <>
-      <Card className="emojiSessionDiv">
-        <CardHeader className='cardHeader'>
-          <HeaderText>Last Feeling...</HeaderText>
-        </CardHeader>
-        <MessageDiv className='messageDiv'>
-          <NumberText style={NumberTextSize}>{data ? emojiObject[data[0].moodPercentage] : "No Completed Sessions"}</NumberText>
-        </MessageDiv>
-        <div style={{ position: "relative", right: "37%", bottom: "15%", whiteSpace: "nowrap" }}>
+      <div className="Emoji">
+        <div className='CardHeader'>
+          <h2>Last Feeling...</h2>
+        </div>
+        <div className='MessageDiv'>
+          <p className='NumberText' style={NumberTextSize}>{data ? emojiObject[data[0].moodPercentage] : "No Completed Sessions"}</p>
+        </div>
+        <div className='custom-div'>
           <Tooltip
             children={<FontAwesomeIcon icon={faCircleInfo} style={{color: "#b8b7b7",}} />}
             text="Emoji representing your mood in last session"
           />
         </div>
-      </Card>
+      </div>
     </>
   );
 }

@@ -1,41 +1,8 @@
 import React from 'react';
 import { Card, Space } from 'antd';
-import { styled } from 'styled-components';
 import { useNavigate } from 'react-router-dom';
+import '../../styles/CompletedSessions.css';
 
-const CardContainer = styled.div`
-  display: grid;
-  height: 8.5em;
-  grid-template-columns: 15% 40% 45% ;
-  padding: 1.875em 2.500em;
-  align-items:center;
-  text-align:center;
-  background-color: #f5f5f5a8;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size:0.8em
-`;
-
-const MessageContainer = styled.div`
-  background-color: #f5f5f5a8;
-`;
-
-const IndexContainer = styled.div`
-  align-items:center;
-  font-size: 1.2em;
-  background-color: #f5f5f5a8;
-
-`;
-const SecondColumnContainer = styled.div`
-  text-align: left;
-`;
-
-const CheckBox = styled.input`
-background-color: #5271FF; /* Example color */
-padding: 10em;
-transform: scale(1.5);
-border: 1px solid blue;
-`;
 
 const CompletedSessions = ({ data }) => {
   const navigate = useNavigate();
@@ -64,20 +31,20 @@ const CompletedSessions = ({ data }) => {
           const dataLength = data.length;
           let sessionNumber = dataLength - index;
           return (
-            <CardContainer className='hover:text-custom-blue hover:bg-gray-50' key={index} onClick={() => handleSessionClick(item)}>
-              <CheckBox type="checkbox" id="myCheckbox" checked readOnly={true} />
-              <SecondColumnContainer>
-                <IndexContainer>
+            <div className='hover:text-custom-blue hover:bg-gray-50' key={index} onClick={() => handleSessionClick(item)}>
+              <input className='CheckBox' type="checkbox" id="myCheckbox" checked readOnly={true} />
+              <div className='SecondColumnContainer'>
+                <div className='IndexContainer'>
                   <p>Session #{sessionNumber}</p>
-                </IndexContainer>
-                <MessageContainer>
+                </div>
+                <div className='MessageContainer'>
                   <p>{item?.shortSummary}</p>
-                </MessageContainer>
-              </SecondColumnContainer>
+                </div>
+              </div>
               <div>
                 <p>{timeToUsersBrowser(item?.time)}</p>
               </div>
-            </CardContainer>
+            </div>
           )
         })}
         <div style={{ color: '#5271FF', position: 'absolute', bottom: '.1em', right: '1.0em'}}>

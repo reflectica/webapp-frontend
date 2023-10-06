@@ -11,6 +11,32 @@
   border-radius: 15px;
   border: 8px solid #5271FF;
   }
+
+  /* EndSessionButton */
+.end-session-button {
+  position: absolute;
+  bottom: 2.5em;
+  right: 3.5em;
+  font-weight: bold;
+  border: none;
+  background-color: #5271FF;
+  padding: 1em;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 10.3125em;
+  align-self: center;
+}
+.relative-container {
+  position: relative;
+  right: 50%;
+  bottom: 50%;
+  white-space: nowrap;
+}
+/* EndSessionContainer */
+.end-session-container {
+  text-align: center;
+  margin-right: 1em;
+}
   
   .mic-container {
     

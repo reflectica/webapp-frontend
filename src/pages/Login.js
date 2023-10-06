@@ -4,78 +4,11 @@ import firebaseApp from './firebase.js';
 import { collection, getDocs } from 'firebase/firestore';
 import { getAuth, GoogleAuthProvider, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithRedirect } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
-import styled from 'styled-components';
 import { useContext } from "react";
 import { Navigate } from "react-router";
 import { AuthContext } from "./Auth.js";
 import Logo from '../images/Logo Transparent.png'
-
-
-const ButtonWrapper = styled.div`
-
-  button {
-    margin-bottom: 100px;
-    width: 390px;
-    height: 40px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    padding: 20px 20px;
-    transition: background-color 0.3s ease;
-    background-color: #FFF;
-    color: #3C4043;
-    border-radius: 20px;
-border: 1px solid #DADCE0;
-background: #FFF;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-letter-spacing: 0.25px;
-    &:hover {
-      background-color: rgb(219, 219, 219);
-    }
-    & > svg {
-        margin-right: 80px; /* Adjust this value for the desired spacing */
-      }
-  }
-`;
-const ErrorMessage = styled.p`
-color: #d80606dc;
-font-size: 1em;
-`;
-
-const LoginWrapper = styled.div`
-
-  button {
-    margin-bottom: 5px; 
-    width: 390px;
-    height: 40px;
-    font-weight: 600;
-    line-height: 0;
-    padding: 20px 20px;
-    transition: background-color 0.3s ease;
-    background-color: #5271FF;
-    color: white;
-    border-radius: 20px;
-border: 1px solid #DADCE0;
-
-font-size: 15px;
-font-style: normal;
-font-weight: 500;
-letter-spacing: 0.25px;
-    &:hover {
-      background-color: #9FADFC;
-    }
-
-  }
-`;
-
-const Image = styled.img`
-  max-width: 200px;  // adjust as needed
-  max-height: 200px;  // adjust as needed
-  height: auto;
-  width: auto;
-`;
+import '../styles/Login.css';
 
 
 export default function Login() {
@@ -172,7 +105,7 @@ export default function Login() {
         <>
             <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-                    <Image className="mx-auto h-10 w-auto" src={Logo} alt="Your Company" />
+                    <img className="mx-auto h-10 w-auto" src={Logo} alt="Your Company" />
 
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
                         Welcome back!
@@ -204,7 +137,6 @@ export default function Login() {
                                 />
                             </div>
                         </div>
-
                         <div>
                             <div className="flex items-center justify-between">
                                 <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
@@ -214,7 +146,6 @@ export default function Login() {
                                     <a href="#" onClick={() => handleForgotPassword(email)} className="font-semibold text-indigo-600 hover:text-indigo-500">
                                         Forgot password?
                                     </a>
-
                                 </div>
                             </div>
                             <div className="mt-2">
@@ -230,24 +161,22 @@ export default function Login() {
                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />
                             </div>
-                            <ErrorMessage>
+                            <div className='ErrorMessage'>
                                 {errorMessage}
-                            </ErrorMessage>
+                            </div>
                         </div>
-
                         <div>
-                            <LoginWrapper>
+                            <div className='LoginWrapper'>
                                 <button
                                     type='submit'
                                     className="rounded-md bg-indigo-50 px-3 py-2 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100"
                                 >
                                     Sign in
                                 </button>
-                            </LoginWrapper>
+                            </div>
                         </div>
                     </form>
-
-                    <ButtonWrapper>
+                    <div className='ButtonWrapper'>
                         <button type="button"
                             class="rounded-md bg-indigo-50 px-3 py-2 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100"
                             onClick={(event) => {
@@ -261,11 +190,9 @@ export default function Login() {
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4.40455 11.8999C4.20455 11.2999 4.09091 10.659 4.09091 9.99994C4.09091 9.34085 4.20455 8.69994 4.40455 8.09994V5.50903H1.06364C0.386364 6.85903 0 8.38631 0 9.99994C0 11.6136 0.386364 13.1409 1.06364 14.4909L4.40455 11.8999Z" fill="#FBBC05" />
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10 3.97727C11.4682 3.97727 12.7864 4.48182 13.8227 5.47273L16.6909 2.60455C14.9591 0.990909 12.6955 0 10 0C6.09091 0 2.70909 2.24091 1.06364 5.50909L4.40455 8.1C5.19091 5.73636 7.39546 3.97727 10 3.97727Z" fill="#EA4335" />
                             </svg>
-
                             Continue with Google
                         </button>
-                    </ButtonWrapper>
-
+                    </div>
                 </div>
             </div>
         </>

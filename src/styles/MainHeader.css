@@ -1,0 +1,48 @@
+/* Nav */
+nav.Nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    height: 67px;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* NotificationAndLogout */
+  div.NotificationAndLogout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  div.NotificationAndLogout svg {
+    padding-top: 1vh;
+    padding-right: 1vh;
+    height: 21px;
+    width: 16px;
+    margin-right: 10px;
+  }
+  
+  /* LogoutButton */
+  button.LogoutButton {
+    margin-top: 1vh;
+    background: red;
+    color: white;
+    border: none;
+    width: 75px;
+    height: 30px;
+    font-size: 2vh;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.LogoutButton:hover {
+    background: darkred;
+  }
+  

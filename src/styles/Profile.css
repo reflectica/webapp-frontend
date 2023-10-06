@@ -1,0 +1,32 @@
+/* CSS for the outermost container */
+.outer-container {
+  height: 87vh;
+  display: flex;
+  background-color: #f7f5f5;
+}
+
+/* CSS for the sidebar */
+.sidebar {
+  flex-shrink: 0;
+  width: 250px;
+  min-width: 200px;
+  padding-right: 1px;
+}
+
+/* CSS for the main content container */
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CSS for the main header */
+.main-header {
+  flex-grow: 0;
+}
+
+/* CSS for the dashboard */
+.dashboard {
+  flex: 1;
+  width: 100%;
+}

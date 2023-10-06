@@ -4,6 +4,7 @@ import TotalSessions from '../components/Dashboard/TotalSessions'
 import OverallHealth from '../components/Dashboard/OverallHealth'
 import StartSession from '../components/Dashboard/StartSession'
 import { AuthContext } from "./Auth";
+import '../styles/Dashboard.css';
 import axios from "axios"
 import EmojiComponent from "../components/Dashboard/EmojiComponent";
 
@@ -20,26 +21,26 @@ export default function Dashboard() {
   },[])
   
     return (
-      <div style={{ height: '35.375em;', display: 'flex', backgroundColor: '#f7f5f5' }}>
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'row' }}>
-            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', marginRight: '2vw' }}>
-              <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '2vw', marginTop: '6vh', paddingBottom: '1vh' }}>
-                <div style={{ flex: 1, borderRadius:"15px"}}> 
+      <div className="outer-container">
+        <div className="flex-container-1">
+          <div className="flex-container-2">
+            <div className="flex-container-3">
+              <div className="flex-row">
+                <div className="flex-item"> 
                   <TotalSessions number={data?.totalSessions}/>
                 </div>
-                <div style={{ flex: 1, borderRadius:"15px"}}> 
+                <div className="flex-item"> 
                   <EmojiComponent data={data?.summaryData}/>
                 </div>
-                <div style={{ flex: 1 }}> 
+                <div> 
                   <OverallHealth number={data?.overallMentalHealth} change={data?.prevOverall}/>
                 </div>
               </div>
-              <div style={{ flex: 1, marginTop: '2vh', paddingLeft:'1.9vw' }}>
+              <div className="second-row">
                 <CompletedSessions  data={data?.summaryData}/>
               </div>
             </div>
-            <div style={{ flex: 1, marginTop: '6vh'}}>
+            <div className="start-session">
               <StartSession/>
             </div>
           </div>

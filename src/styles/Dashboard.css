@@ -1,0 +1,57 @@
+/* CSS for the outermost container */
+.outer-container {
+    height: 30.375em;
+    display: flex;
+    background-color: #f7f5f5;
+  }
+  
+  /* CSS for the first flex container */
+  .flex-container-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* CSS for the second flex container */
+  .flex-container-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* CSS for the third flex container */
+  .flex-container-3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vw;
+  }
+  
+  /* CSS for the row within the third flex container */
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2vw;
+    margin-top: 6vh;
+    padding-bottom: 1vh;
+  }
+  
+  /* CSS for the individual flex items within the row */
+  .flex-item {
+    flex: 1;
+    border-radius: 15px;
+  }
+  
+  /* CSS for the second row within the third flex container */
+  .second-row {
+    flex: 1;
+    margin-top: 2vh;
+    padding-left: 1.9vw;
+  }
+  
+  /* CSS for the component at the end of the second row */
+  .start-session {
+    flex: 1;
+    margin-top: 6vh;
+  }
+  

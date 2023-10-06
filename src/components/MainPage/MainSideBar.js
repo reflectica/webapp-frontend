@@ -10,7 +10,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import firebaseApp from "../../pages/firebase.js";
 import { getFirestore, doc, getDoc } from 'firebase/firestore';
-import '../../styles/MainSideBar.css'
 
 const navigation = [
   { name: 'Dashboard', href: 'dashboard', icon: faGauge },

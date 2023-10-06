@@ -5,7 +5,6 @@ import '../styles/Chat.css';
 import '../styles/Mic.css';
 import { useContext } from "react";
 import { AuthContext } from "./Auth";
-import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import Tooltip from "../components/Tooltip";
@@ -13,26 +12,6 @@ import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const backendUrl = process.env.REACT_APP_BACKEND_URL;
-
-const EndSessionButton = styled.button`
-
-position:absolute;
-bottom: 2.5em;
-right: 3.5em;
-font-weight: bold;
-border: none;
-background-color: #5271FF;
-padding: 1em;
-border-radius: 15px;
-cursor: pointer;
-width: 10.3125em; // New Line
-align-self: center; // New Line
-`;
-
-const EndSessionContainer = styled.div`
-text-align: center;
-margin-right: 1em;
-`;
 
 export default function Chat() {
   const { currentUser } = useContext(AuthContext);
@@ -116,17 +95,14 @@ export default function Chat() {
               </div>
             </div>
           </button>
-          <div style={{ position: "absolute", top: "70%", right: "41%" }}>
-
-          </div>
         </div>
         <div className="textButtonContainer">
           <div>
-            <EndSessionContainer>
-              <EndSessionButton onClick={() => handleEndSession(currentUser?.uid)}>End Session</EndSessionButton>
-            </EndSessionContainer>
+            <div className="end-session-container">
+              <button className="end-session-button" onClick={() => handleEndSession(currentUser?.uid)}>End Session</button>
+            </div>
           </div>
-          <div style={{ position: "relative", right: "50%", bottom: "50%", whiteSpace: "nowrap" }}>
+          <div className="relative-container">
             <Tooltip
               children={<FontAwesomeIcon icon={faCircleInfo} />}
               text="Press mic to begin speaking, then press once more to stop"

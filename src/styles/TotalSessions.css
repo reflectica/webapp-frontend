@@ -21,6 +21,13 @@
     line-height: normal;
     letter-spacing: 0.028px;
     text-align: center;
+    display: flex;
+    width: 8.4375em;
+    height: 2.063875em;
+    margin-top:1.6em;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 .messageDiv {
@@ -32,4 +39,10 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.028px;
+    display: flex;
+    width: 8.4375em;
+    height: 5.592375em;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
 }

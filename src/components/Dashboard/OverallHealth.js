@@ -1,45 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import "../../styles/OverallMentalHealth.css"
 import Tooltip from '../Tooltip';
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-const Card = styled.div`
-  width: 19.3125em;
-  height: 10.4375em;
-  flex-shrink: 0;
-  border-radius: 15px;
-  background: #FFF;
-  border-radius: 15px;
-`;
-
-const CardHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.1743125em;
-  
-`;
-
-
-const HeaderText = styled.h2`
-  margin-top: 0.9em;
-  margin-left: 1.2275em;
-`;
-
-const Difference = styled.p`
-  font-size: 1em;
-  margin-top: 0.9em;
-  margin-right: 3.67625em;
-`;
-
-const NumberText = styled.p`
-  font-size: 2.1875em;
-  margin: 0;
-  font-weight: bold;
-  text-align: center
-`;
 
 export default function OverallHealth({ number, change }) {
 
@@ -56,21 +19,21 @@ export default function OverallHealth({ number, change }) {
   { fontSize: "2.25em" } :
   { fontSize: "1em"}
     return (
-      <Card>
-        <CardHeader className='overallMentalHealthCardHeaderDiv'>
-          <HeaderText>Overall Mental Health</HeaderText>
-          <Difference >{Math.floor(number) ? style : null} {Math.floor(number) === 0 ? <span>{`==`}</span> : null}</Difference>
-        </CardHeader>
+      <div className='Health'>
+        <div className='overallMentalHealthCardHeaderDiv'>
+          <h2 className='HeaderText'>Overall Mental Health</h2>
+          <p className='Difference' >{Math.floor(number) ? style : null} {Math.floor(number) === 0 ? <span>{`==`}</span> : null}</p>
+        </div>
         <div className="overallHealthCardBody">
           <div className='overallHealthNumberHealth'>
-            <NumberText style={NumberTextSize}>{number ? `${Math.floor(number)}/10`: "No Completed Sessions"}</NumberText>
+            <p className='NumberText' style={NumberTextSize}>{number ? `${Math.floor(number)}/10`: "No Completed Sessions"}</p>
           </div>
         </div>
         <div style={{marginTop:"0.7em", marginLeft:"0.8em", whiteSpace:"nowrap"}}>
         <Tooltip
             children={<FontAwesomeIcon icon={faCircleInfo} style={{color: "#b8b7b7",}} />} text="Represents your overal mental health score and change over time"/>
         </div>
-      </Card>
+      </div>
     );
   }
   

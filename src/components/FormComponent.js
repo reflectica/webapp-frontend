@@ -2,9 +2,7 @@ import React, { useState, useContext } from "react";
 import { getAuth, deleteUser, reauthenticateWithCredential, EmailAuthProvider, updatePassword } from "firebase/auth";
 import { AuthContext } from '../pages/Auth';
 import axios from "axios";
-
-
-
+import '../styles/FormComponent.css';
 
 export default function FormComponent({ id }) {
   const { currentUser } = useContext(AuthContext);
@@ -61,55 +59,29 @@ export default function FormComponent({ id }) {
 
     };
 
-    const labelStyle = {
-      fontSize: '12px',
-      fontWeight: '600',
-      marginRight: '8px'
-    };
-
-    const inputStyle = {
-      fontSize: '12px',
-      padding: '4px 8px',
-      margin: '4px 0',
-      width: '200px' // or any desired width
-    };
-
-    const buttonStyle = {
-      marginLeft: '8px',
-      padding: '4px 8px',
-      fontSize: '12px',
-      fontWeight: '600',
-      transition: 'background-color 0.3s ease',
-      backgroundColor: '#5271FF',
-      color: 'white',
-      borderRadius: '5px',
-
-    };
-
-
         return (
             <form>
               <div className="form-group">
-                <label htmlFor="displayName" style={labelStyle}>Change Display Name:</label>
+                <label className="labelStyle" htmlFor="displayName" >Change Display Name:</label>
                 <div className="input-group">
-                  <input type="text" id="displayName" onChange={(e) => setName(e.target.value)} value={name} name="displayName" placeholder="Enter new display name" style={inputStyle} />
-                  <button type="button" onClick={() => handleConfirm('name', name)} style={buttonStyle}>Confirm</button>
+                  <input className= "inputStyle" type="text" id="displayName" onChange={(e) => setName(e.target.value)} value={name} name="displayName" placeholder="Enter new display name" />
+                  <button className="buttonStyle" type="button" onClick={() => handleConfirm('name', name)}>Confirm</button>
                 </div>
               </div>
         
               <div className="form-group">
-                <label htmlFor="email" style={labelStyle}>Change Email:</label>
+                <label htmlFor="email" className="labelStyle">Change Email:</label>
                 <div className="input-group">
-                  <input type="email" id="email" onChange={(e) => setEmail(e.target.value)}  value={email} name="email" placeholder={emailPlaceHolder} autoComplete="email" style={inputStyle} />
-                  <button type="button" onClick={() => handleConfirm('email', email)} style={buttonStyle}>Confirm</button>
+                  <input  className= "inputStyle" type="email" id="email" onChange={(e) => setEmail(e.target.value)}  value={email} name="email" placeholder={emailPlaceHolder} autoComplete="email" />
+                  <button className="buttonStyle" type="button" onClick={() => handleConfirm('email', email)} >Confirm</button>
                 </div>
               </div>
         
               <div className="form-group">
-                <label htmlFor="phoneNumber" style={labelStyle}>Change Phone Number:</label>
+                <label className="labelStyle" htmlFor="phoneNumber" >Change Phone Number:</label>
                 <div className="input-group">
-                  <input type="tel" id="phoneNumber" name="phoneNumber" onChange={(e) => setPhoneNumber(e.target.value)} value={phoneNumber} placeholder={phoneNumberPlaceHolder} style={inputStyle} />
-                  <button type="button" onClick={() => handleConfirm('phoneNumber', phoneNumber)} style={buttonStyle}>Confirm</button>
+                  <input className= "inputStyle" type="tel" id="phoneNumber" name="phoneNumber" onChange={(e) => setPhoneNumber(e.target.value)} value={phoneNumber} placeholder={phoneNumberPlaceHolder}/>
+                  <button className="buttonStyle" type="button" onClick={() => handleConfirm('phoneNumber', phoneNumber)} >Confirm</button>
                 </div>
               </div>
             </form>
@@ -118,31 +90,6 @@ export default function FormComponent({ id }) {
 
   if (id === 'passwordForm') {
 
-
-    const labelStyle = {
-      fontSize: '12px',
-      fontWeight: '600',
-      marginRight: '8px'
-    };
-
-    const inputStyle = {
-      fontSize: '12px',
-      padding: '4px 8px',
-      margin: '4px 0',
-      width: '200px'
-    };
-
-    const buttonStyle = {
-      marginLeft: '8px',
-      padding: '4px 8px',
-      fontSize: '12px',
-      fontWeight: '600',
-      transition: 'background-color 0.3s ease',
-      backgroundColor: '#5271FF',
-      color: 'white',
-      borderRadius: '5px',
-
-    };
     const handlePasswordChange = async () => {
       const auth = getAuth();
       const user = auth.currentUser;
@@ -199,42 +146,32 @@ export default function FormComponent({ id }) {
           {passwordError ? passwordError : null }
         </div>
         <div className="form-group">
-          <label htmlFor="old-password" style={labelStyle}>Old Password:</label>
+          <label className="labelStyle" htmlFor="old-password" >Old Password:</label>
           <div className="input-group">
-            <input type="text" id="old-password" name="oldPassword" placeholder="Enter old password" style={inputStyle} />
+            <input className="inputStyle" type="text" id="old-password" name="oldPassword" placeholder="Enter old password" />
 
           </div>
         </div>
 
         <div className="form-group">
-          <label htmlFor="new-password" style={labelStyle}>New password:</label>
+          <label className="labelStyle" htmlFor="new-password" >New password:</label>
           <div className="input-group">
-            <input type="text" id="new-password" name="newPassword" placeholder="Enter new password" style={inputStyle} />
+            <input className="inputStyle" type="text" id="new-password" name="newPassword" placeholder="Enter new password" />
 
           </div>
         </div>
 
         <div className="form-group">
-          <label htmlFor="confirm-password" style={labelStyle}>Confirm password:</label>
+          <label className="labelStyle" htmlFor="confirm-password" >Confirm password:</label>
           <div className="input-group">
-            <input type="password" id="confirm-password" name="confirmPassword" placeholder="Confirm password" style={inputStyle} />
-            <button type="button" onClick={handlePasswordChange} style={buttonStyle}>Confirm</button>
+            <input className="inputStyle" type="password" id="confirm-password" name="confirmPassword" placeholder="Confirm password"  />
+            <button className="buttonStyle" type="button" onClick={handlePasswordChange} >Confirm</button>
           </div>
         </div>
       </form>
     );
   }
   if (id === 'deleteForm') {
-
-    const buttonStyle = {
-      padding: '4px 8px',
-      fontSize: '12px',
-      fontWeight: '600',
-      transition: 'background-color 0.3s ease',
-      backgroundColor: '#f71818',
-      color: 'white',
-      borderRadius: '5px',
-    };
 
     const deleteUserData = async (userId) => {
       try {
@@ -277,21 +214,10 @@ export default function FormComponent({ id }) {
 
 
     return (
-      <button type="button" style={buttonStyle} onClick={handleSubmit}>Delete Account</button>
+      <button className="deleteButton" type="button" onClick={handleSubmit}>Delete Account</button>
     );
   }
   if (id === 'paymentForm') {
-
-    const buttonStyle = {
-      padding: '4px 8px',
-      fontSize: '12px',
-      fontWeight: '600',
-      transition: 'background-color 0.3s ease',
-      backgroundColor: '#5271FF',
-      color: 'white',
-      borderRadius: '5px',
-    };
-
 
     const handleSubmit = () => {
       window.location.href = "https://billing.stripe.com/p/login/cN22aieAg2QJ21q3cc";
@@ -300,7 +226,7 @@ export default function FormComponent({ id }) {
 
 
     return (
-      <button type="button" style={buttonStyle} onClick={handleSubmit}>Customer Portal</button>
+      <button className="portalButton" type="button"  onClick={handleSubmit}>Customer Portal</button>
     );
   }
   return null;

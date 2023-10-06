@@ -1,0 +1,31 @@
+/* Card */
+div.Card {
+    width: 32em;
+    height: 30em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fefefe;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  /* CardHeader */
+  h2.CardHeader {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Add any other styles you want for the header. */
+  }
+  
+  /* CardDetails */
+  p.CardDetails {
+    font-size: 0.7em;
+    font-weight: 300;
+    /* This sets the font weight to light. */
+  }
+  
+  /* Form */
+  div.Form {
+    margin-top: 5em;
+  }
+  

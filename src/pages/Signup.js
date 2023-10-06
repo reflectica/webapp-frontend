@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import firebaseApp from './firebase.js';
 import { getAuth, GoogleAuthProvider, signInWithRedirect, getRedirectResult, createUserWithEmailAndPassword, sendEmailVerification  } from "firebase/auth";
 import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
-import styled from 'styled-components';
+import '../styles/Login.css';
 import { useContext } from "react";
 import { Navigate } from "react-router";
 import Checkbox from '@mui/material/Checkbox';
@@ -15,70 +15,6 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { AuthContext } from "./Auth.js";
 import Logo from '../images/Logo Transparent.png'
-
-const ButtonWrapper = styled.div`
-
-  button {
-    margin-bottom: 1.2em;
-  
-    width: 390px;
-    height: 40px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    padding: 20px 20px;
-    transition: background-color 0.3s ease;
-    background-color: #FFF;
-    color: #3C4043;
-    border-radius: 20px;
-border: 1px solid #DADCE0;
-background: #FFF;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-letter-spacing: 0.25px;
-    &:hover {
-      background-color: rgb(219, 219, 219);
-    }
-    & > svg {
-        margin-right: 80px; /* Adjust this value for the desired spacing */
-      }
-  }
-`;
-
-const LoginWrapper = styled.div`
-
-  button {
-    margin-bottom: 5px; 
-    width: 390px;
-    height: 40px;
-    font-weight: 600;
-    line-height: 0;
-    padding: 20px 20px;
-    transition: background-color 0.3s ease;
-    background-color: #5271FF;
-    color: white;
-    border-radius: 20px;
-border: 1px solid #DADCE0;
-
-font-size: 15px;
-font-style: normal;
-font-weight: 500;
-letter-spacing: 0.25px;
-    &:hover {
-      background-color: #9FADFC;
-    }
-
-  }
-`;
-
-const Image = styled.img`
-  max-width: 200px;  // adjust as needed
-  max-height: 200px;  // adjust as needed
-  height: auto;
-  width: auto;
-`;
-
 
 export default function Signup() {
     const [authState, setAuthState] = useState('not-checked');
@@ -194,7 +130,7 @@ export default function Signup() {
         <>
             <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-                    <Image className="mx-auto h-10 w-auto" src={Logo} alt="Your Company" />
+                    <img className="mx-auto h-10 w-auto" src={Logo} alt="Your Company" />
 
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
                         Create an account!
@@ -269,10 +205,8 @@ export default function Signup() {
                             </div>
                         </div>
 
-
-
                         <div>
-                            <LoginWrapper>
+                            <div className='LoginWrapper'>
                                 <button
                                     type="submit"
                                     disabled= {termsCheckValue ? null : true }
@@ -280,11 +214,11 @@ export default function Signup() {
                                 >
                                     Sign up
                                 </button>
-                            </LoginWrapper>
+                            </div>
                         </div>
                     </form>
 
-                    <ButtonWrapper>
+                    <div className='ButtonWrapper'>
                         <button type="button"
                             disabled= {termsCheckValue ? null : true }
                             class="rounded-md bg-indigo-50 px-3 py-2 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100"
@@ -302,7 +236,7 @@ export default function Signup() {
 
                             Continue with Google
                         </button>
-                    </ButtonWrapper>
+                    </div>
 
                     <div style={{display:'flex', whiteSpace:"nowrap"}}>
                         <Checkbox

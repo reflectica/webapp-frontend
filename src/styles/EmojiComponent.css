@@ -1,17 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
 
-.cardHeader {
+
+div.CardHeader {
     color: #000;
     text-align: center;
     font-family: Mukta;
     font-size: 1.1743125em;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+   
     letter-spacing: 0.028px;
-}
+    display: flex;
+    width: 8.4375em;
+    height: 2.063875em;
+    margin-top: 1.6em;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+  }
 
-.messageDiv {
+
+div.Emoji {
+    height: 10.4375em;
+    width: 9.625em;
+    border-radius: 15px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  div.custom-div {
+    position: relative;
+    right: 37%;
+    bottom: 15%;
+    white-space: nowrap;
+  }
+
+  div.MessageDiv {
     color: #000;
     text-align: center;
     font-family: Mukta;
@@ -19,4 +47,17 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.125px;
-}
+    display: flex;
+    width: 8.4375em;
+    height: 5.592375em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  p.NumberText {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+  }

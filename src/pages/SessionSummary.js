@@ -1,7 +1,6 @@
 import React from 'react'
 import { useLocation, Link } from 'react-router-dom';
 import "../styles/SessionSummary.css";
-import styled from "styled-components"
 import tooltipIcon from "../images/tooltipImage.png";
 import Tooltip from '../components/Tooltip';
 
@@ -18,12 +17,6 @@ const emojiObject = {
     10: "😇",
 }
 
-const Image = styled.img`
-  max-width: 200px;  // adjust as needed
-  max-height: 200px;  // adjust as needed
-  height: auto;
-  width: auto;
-`;
 
 const SessionSummary = () => {
     const location = useLocation();
@@ -47,7 +40,7 @@ const SessionSummary = () => {
                                 <p>{`${Math.floor(apiData?.moodPercentage ?? apiData?.mood)}/10`}</p>
                             </div>
                             <div>
-                                <Tooltip children={<Image style={{marginTop:"1em", marginLeft:"0.2em"}} src={tooltipIcon} alt="tooltip icon"/>} text="Score representing your mood"/>
+                                <Tooltip children={<img style={{marginTop:"1em", marginLeft:"0.2em"}} src={tooltipIcon} alt="tooltip icon"/>} text="Score representing your mood"/>
                             </div>
                         </div>
                         <div className='sessionEmojiContainer'>
@@ -58,7 +51,7 @@ const SessionSummary = () => {
                                 {emojiObject[apiData?.moodPercentage] ?? emojiObject[apiData?.mood]}
                             </div>
                             <div>
-                                <Tooltip children={<Image style={{marginTop:"1em", marginLeft:"0.2em"}} src={tooltipIcon} alt="tooltip icon"/>} text="Emoji representing your mood"/>
+                                <Tooltip children={<img style={{marginTop:"1em", marginLeft:"0.2em"}} src={tooltipIcon} alt="tooltip icon"/>} text="Emoji representing your mood"/>
                             </div>
                         </div>
                     </div>

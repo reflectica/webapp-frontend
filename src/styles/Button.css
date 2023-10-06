@@ -1,0 +1,26 @@
+.loginButton button {
+    position: absolute;
+    top: 23px;
+    right: 126px;
+    padding: 7px 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    background-color: #F5F7FA;
+    color: #5271FF;
+}
+
+
+.signupButton button {
+    position: absolute;
+    top: 23px;
+    right: 40px;
+    padding: 7px 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    background-color: #5271FF;
+    color: white;
+
+}
+.signupButton button:hover {
+    background-color: #9FADFC;
+  }

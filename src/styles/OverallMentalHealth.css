@@ -2,6 +2,10 @@
 
 
 .overallMentalHealthCardHeaderDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1743125em;
     color: #000;
     font-family: Mukta;
     font-size: 1.1743125em;
@@ -17,5 +21,37 @@
     justify-content: center;
 }
 
+/* Card */
+div.Health {
+    width: 19.3125em;
+    height: 10.4375em;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
+  }
+  
+
+  
+  /* HeaderText */
+  h2.HeaderText {
+    margin-top: 0.9em;
+    margin-left: 1.2275em;
+  }
+  
+  /* Difference */
+  p.Difference {
+    font-size: 1em;
+    margin-top: 0.9em;
+    margin-right: 3.67625em;
+  }
+  
+  /* NumberText */
+  p.NumberText {
+    font-size: 2.1875em;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+  }
+  
 
 

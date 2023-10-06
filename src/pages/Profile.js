@@ -2,6 +2,7 @@ import React from "react";
 import MainSideBar from "../components/MainPage/MainSideBar";
 import MainHeader from "../components/MainPage/MainHeader";
 import Dashboard from "./Dashboard";
+import '../styles/Profile.css';
 
 export default function Profile() {
   return (
