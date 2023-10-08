@@ -37,7 +37,7 @@ const AllSessions = () => {
                 let sessionNumber = dataLength - index;
                 return (
                     <div className='CardContainer' key={index} onClick={() => handleSessionClick(item)}>
-                    <div className='CheckBox' type="checkbox" id="myCheckbox" checked readOnly={true} />
+                    <input className='CheckBox' type="checkbox" id="myCheckbox" checked readOnly={true} />
                     <div className='SecondColumnContainer'>
                         <div className='IndexContainer'>
                         <p>Session #{sessionNumber}</p>

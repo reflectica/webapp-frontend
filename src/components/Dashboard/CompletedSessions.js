@@ -31,7 +31,7 @@ const CompletedSessions = ({ data }) => {
           const dataLength = data.length;
           let sessionNumber = dataLength - index;
           return (
-            <div className='hover:text-custom-blue hover:bg-gray-50' key={index} onClick={() => handleSessionClick(item)}>
+            <div className='CardContainer' key={index} onClick={() => handleSessionClick(item)}>
               <input className='CheckBox' type="checkbox" id="myCheckbox" checked readOnly={true} />
               <div className='SecondColumnContainer'>
                 <div className='IndexContainer'>
