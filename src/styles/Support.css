@@ -9,5 +9,16 @@
     margin-left: 1em;
     margin-top: 1em;
     border-radius: 15px;
-    border: 8px solid #5271FF;
     }
+
+    @media (min-width: 800px) {
+        .container-support {
+            height: 80vh;
+        }
+      }
+      @media (max-width: 600px) { 
+        .container-support {
+            height: 80vh;
+          }
+      }
+      

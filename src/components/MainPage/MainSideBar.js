@@ -42,8 +42,9 @@ export default function MainSideBar() {
   })
 
   return (
+    
     <div className="sidebar-container">
-    <div className="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6 h-screen">
+    <div className="flex grow flex-col gap-y-5 border-r border-gray-200 bg-white px-6 h-screen">
       <div className="flex h-12 shrink-0 items-center">
         <img
           className="h-8 w-auto mt-4"

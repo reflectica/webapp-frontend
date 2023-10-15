@@ -11,6 +11,16 @@
   border-radius: 15px;
   border: 8px solid #5271FF;
   }
+  @media (min-width: 800px) {
+    .container{
+        height: 85vh;
+    }
+  }
+  @media (max-width: 600px) { 
+    .container {
+        height: 80vh;
+      }
+  }
 
   /* EndSessionButton */
 .end-session-button {
@@ -27,8 +37,16 @@
   align-self: center;
 }
 .relative-container {
+
   position: relative;
   right: 50%;
+  bottom: 50%;
+  white-space: nowrap;
+}
+
+.listening-relative-container{
+  position: relative;
+  right: 26.5%;
   bottom: 50%;
   white-space: nowrap;
 }
@@ -37,6 +55,7 @@
   text-align: center;
   margin-right: 1em;
 }
+
   
   .mic-container {
     

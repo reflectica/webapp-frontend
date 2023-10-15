@@ -2,8 +2,7 @@
     color: #5271FF;
 }
 .sidebar-container {
-    height: 100vh;
-    overflow-y: auto;
+    height: screen !important;
   }
   @media (min-width: 768px) {
     .sidebar-container {
