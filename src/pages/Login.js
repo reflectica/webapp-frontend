@@ -96,7 +96,7 @@ export default function Login() {
         return <Navigate to="/profile" />;
     } else if (currentUser && authState === 'unpaid') {
         console.log("User subscription is not active. Redirecting to payment.");
-        return <Navigate to="/payment" />;
+        return <Navigate to="/profile" />;
     } else {
         // Navigate somewhere else, maybe a login or unauthorized page
     }

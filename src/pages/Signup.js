@@ -121,7 +121,7 @@ export default function Signup() {
 
     if (currentUser && authState === 'authenticated') {
         console.log(currentUser);
-        return <Navigate to="/payment" />;
+        return <Navigate to="/profile" />;
     }
 
 
